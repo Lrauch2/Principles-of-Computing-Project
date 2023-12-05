@@ -8,17 +8,17 @@
     <title>Page Title</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light navbar-light"><img src="https://unsplash.it/30/30" class="mr-2"><a class="navbar-brand" href="index.html">Chicago Schools</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light"><img src="chicago_public_schools.png" width="100" height="100" class="mr-2"><a class="navbar-brand" href="index.html">Chicago Schools</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbar-body">
         <ul class="navbar-nav mr-auto"></ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="Data Sources.html">Data Sources</a></li>
-          <li class="nav-item"><a class="nav-link" href="Visualization.html">Visualization Group 1</a></li>
-          <li class="nav-item"><a class="nav-link" href="Visualization 2.html">Visualization Group 2</a></li>
-          <li class="nav-item"><a class="nav-link" href="Visualization 3.html">Visualization Group 3</a></li>
-          <li class="nav-item"><a class="nav-link" href="Visualization 4.html">Visualization Group 4</a></li>
+          <li class="nav-item"><a class="nav-link" href="Visualization.html">Academic Insights</a></li>
+          <li class="nav-item"><a class="nav-link" href="Visualization 2.html">Misconduct Insights</a></li>
+          <li class="nav-item"><a class="nav-link" href="Visualization 3.html">School Level Insights</a></li>
+          <li class="nav-item"><a class="nav-link" href="Visualization 4.html">Location Insights</a></li>
           <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Additional Information</a>
-            <div class="dropdown-menu"><a class="dropdown-item" href="Our Team.html">Our Team</a><a class="dropdown-item" href="Demo Video.html">Demo Video</a><a class="dropdown-item" href="Conclusion.html">Learning and Conclusion</a>
+            <div class="dropdown-menu"><a class="dropdown-item" href="Our Team.html">Our Team</a><a class="dropdown-item" href="Demo Video.html">Demo Video and Code Breakdown</a><a class="dropdown-item" href="Conclusion.html">Learning and Conclusion</a>
               <div class="dropdown-divider"></div>
             </div>
           </li>
@@ -27,12 +27,20 @@
     </nav>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <h1 class="display-4">Data Sources</h1>
+        <p class="lead">On this page, we will delve into the specific data sources that we used.</p>
       </div>
     </div>
     <div class="container" id="bsr-wrapper">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet fugit exercitationem earum quod. Ad doloribus dignissimos quaerat error aspernatur est, voluptatem deserunt at, dolores asperiores incidunt eligendi commodi sapiente.</p>
+      <picture>
+        <img src="chicago_city_hall.jpeg" class="mx-auto d-block" alt="Responsive image">
+      </picture>
+    </div>
+    <div class="container" id="bsr-wrapper">
+      <div class='my-5'></div>
+    </div>
+    <div class="container" id="bsr-wrapper">
+      <p>We obtained both of our data sets from the Chicago Data Portal, which is a site created by the City of Chicago to house publically available data.  It utilizes the Socrata Open Data API and contains data sets from Beach Weather in 2016 to Criminal Activity from 2001 to the present.  The first data set that we chose to use was the Chicago Public Schools - Progress Report Cards (2011-2012) information.  It had a substantial amount of data from student performance in algebra to family involvement.  In particular, this data set focused on elementary and middle schools.  After choosing this as our focus, we decided to expand upon this by including another data set: Chicago Public Schools - High School Progress Report (2013-2014).  This set includes less schools total but has more high schools than the 2011 data set, which allows us to expand our focus a bit.  It also enables us to take time into consideration by comparing the high schools from 2011 to those in 2013 along with looking for changes between the middle schools in 2011 and high schools in 2013.  To start, we began by using the requests library to obtain both data sets.  Then, we dropped unnecessary columns, specifically those that were repeats of other columns such as x_coordinate in the 2011 dataset.  Following this, we converted the values of columns in their requisite data types.  For example, we converted the rate of misconducts per 100 students into a float because it represents a percentage value.  Other values like the school ID and the school's name remained unchanged.</p>
     </div>
     <footer class="bg-light text-light pt-5 pb-2 px-5">
       
@@ -43,10 +51,10 @@
         <div class="col-sm-6">
           <ul class="list-inline text-sm-center text-md-right">
             <li class="list-inline-item"><a href="Data Sources.html" target="_blank">Data Sources</a></li>
-            <li class="list-inline-item"><a href="Visualization.html" target="_blank">Visualization Group 1</a></li>
-            <li class="list-inline-item"><a href="Visualization 2.html" target="_blank">Visualization Group 2</a></li>
-            <li class="list-inline-item"><a href="Visualization 3.html" target="_blank">Visualization Group 3</a></li>
-            <li class="list-inline-item"><a href="Visualization 4.html" target="_blank">Visualization Group 4</a></li>
+            <li class="list-inline-item"><a href="Visualization.html" target="_blank">Academic Insights</a></li>
+            <li class="list-inline-item"><a href="Visualization 2.html" target="_blank">Misconduct Insights</a></li>
+            <li class="list-inline-item"><a href="Visualization 3.html" target="_blank">School Level Insights</a></li>
+            <li class="list-inline-item"><a href="Visualization 4.html" target="_blank">Location Insights</a></li>
           </ul>
         </div>
       </div>
