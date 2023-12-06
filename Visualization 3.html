@@ -27,26 +27,21 @@
     </nav>
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <h1 class="display-4">School Level Insights</h1>
+        <p class="lead">On this page, we will focus on factors pertaining to specific school levels (elementary, middle, and high).</p>
       </div>      
 
     </div>
     <div class="container" id="bsr-wrapper">
-      <h1>Heading 1</h1>
+      <h2>Performance and Attendance across School Levels</h2>
       <picture>
         <img src="performance vs. attendance.png" class="mx-auto d-block" alt="Responsive image" width = 850>
       </picture>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet fugit exercitationem earum quod. Ad doloribus dignissimos quaerat error aspernatur est, voluptatem deserunt at, dolores asperiores incidunt eligendi commodi sapiente.</p>
+      <p>In this visualization, we compare performance and attendanve values from across the three levels of schools.  The first insight that we gain from this is that all schools are relatively well-attended with each maintaining an average student attendance above 90%.  Our second insight focuses on the performance scores.  With the given schools in our data set, the high school box has a much greater dispersion than the other two and has the highest third quartile of the three, showing that the high schools in Chicago tend to have better scores than the other two.  Our third insight from this data is that middle schools are both the lowest performing and highest attended based on the box plots.  Their attendance is similar to the other two levels of schooling, but the performance scores are much lower.  Middle schools might need to be focused on over the other two in terms of improving performance scores.</p>
+    
       <div class='my-5'></div>
-      <h2>Heading 2</h2>
-      <picture>
-        <img src="school_scores.png" class="mx-auto d-block" alt="Responsive image">
-      </picture>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet fugit exercitationem earum quod. Ad doloribus dignissimos quaerat error aspernatur est, voluptatem deserunt at, dolores asperiores incidunt eligendi commodi sapiente.</p>
-    </div>
-    <h2>Heading 2</h2>
-    <div class="row">
+      <h2>Freshmen on Track</h2>
+      <div class="row">
       <!-- this iframe element connects with the div with the embed code
          and shows it on the cat adoption page -->
       <iframe src="freshmen.html"
@@ -55,12 +50,12 @@
       <!-- the src property points to the html file
          in the same folder that has the div. -->
       <!-- we adjust the height and width properties to match our page size -->
-   </div>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet fugit exercitationem earum quod. Ad doloribus dignissimos quaerat error aspernatur est, voluptatem deserunt at, dolores asperiores incidunt eligendi commodi sapiente.</p>
-   <!-- spacer div -->
-   <div class='py-3 my-4'></div>
-   <h2>Heading 2</h2>
-    <div class="row">
+      </div>
+      <p>This visualization focuses on the percentage of freshmen that are on track with their grade level in Chicago public high schools.  Both the 2011 and 2013 data sets are used here, and the low number of data points is due to the few high schools represented in the 2011 data.  One insight is that teacher attendance doesn't seem to be a good indicator on whether freshmen are on track.  For 2012, the data points seem to be dispersed without any regard to teacher attendance as lower levels have higher rates of freshmen on track than higher levels of teacher attendance.  Another insight that we gained from the data is that the amount of freshmen on track does not seem to improve with time.  Across the three year time frame, the values remain dispersed with some decreases and other increases.  If time was a factor, then we would see values trending in a specific direction as it moves from 2011 to 2013. A third insight that we gained from the data was how far apart some schools were from others in terms of the percentage of freshmen on track.  For example when looking at the data in 2012, one school had around 44% of their freshmen class on track while another had 97%.  This demonstrates huge differences between the schools in the Chicago area.</p>
+      <!-- spacer div -->
+      <div class='py-3 my-4'></div>
+      <h2>College Enrollment by ACT Score</h2>
+      <div class="row">
       <!-- this iframe element connects with the div with the embed code
          and shows it on the cat adoption page -->
       <iframe src="College_by_ACT.html"
@@ -69,10 +64,11 @@
       <!-- the src property points to the html file
          in the same folder that has the div. -->
       <!-- we adjust the height and width properties to match our page size -->
-   </div>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet fugit exercitationem earum quod. Ad doloribus dignissimos quaerat error aspernatur est, voluptatem deserunt at, dolores asperiores incidunt eligendi commodi sapiente.</p>
-   <!-- spacer div -->
-   <div class='py-3 my-4'></div>
+      </div>
+      <p>In this visualization, we used the 2013 data to analyze the relationship between ACT scores and college enrollment.  The first insight that we got from this data is that college enrollment is positively related with average ACT score.  As one increases, the other one increases as well.  An interesting insight about this is that the relationship between college enrollment and ACT score seems to be exponential instead of linear.  Schools that have about 90% of their students moving onto college have much higher average ACT scores (26-30) than those with 70% of their graduating class enrolling in college (16-20).  Another insight is that growth rate in ACT scores is seemingly unrelated to average ACT scores.  The growth rate is demonstrated by the size of the data point.  There are many large and small data points grouped together, indicating that schools with varying growth rates have the similar ACT scores.  A final insight that we got from this data is that the average ACT score across Chicago public high schools is within the range 14 to 20 with a majority of schools falling within this.</p>
+      <!-- spacer div -->
+      <div class='py-3 my-4'></div>
+    </div>
     <footer class="bg-light text-light pt-5 pb-2 px-5">
       
       <div class="row mt-4">
